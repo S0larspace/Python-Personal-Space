@@ -3,12 +3,20 @@ Aim of this script is to filter spam and potential phishes from an email inbox, 
 '''
 import os
 
+# Good practice to establish absolute or dynamic paths
+# Get directory of script
+# __file__ refers to this script itself
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Directory of the sample email source text file
+sampEmail_dir = os.path.join(script_dir, "sample_email_source.txt")
+
 email_info = {
     "from": None,
     "subject": None,
     "date": None
 }
-with open("Python Refresher\Python Projects\Email Inbox Filter\sample_email_source.txt", encoding="utf-8", errors="ignore") as f:
+with open(sampEmail_dir, encoding="utf-8", errors="ignore") as f:
     # C:\Users\Admin\Documents\Career\GitHub Repositories\Python-Personal-Space\Python Projects\Email Inbox Filter\sample_email_source.txt
     for line in f:
         # Remove any trailing and leading whitespaces for each line
@@ -26,7 +34,5 @@ with open("Python Refresher\Python Projects\Email Inbox Filter\sample_email_sour
         elif line.startswith("Date:"):
             email_info["date"] = line[len("Date:"):].strip()
 
-print("CWD: ", os.getcwd())
-print("Files in CWD: ", os.listdir())
-# print("Email details as follows:\nDate: {}\nFrom: {}\nSubject: {}".format(
-#   email_info["date"], email_info["from"], email_info["subject"]))
+print("Email details as follows:\nDate: {}\nFrom: {}\nSubject: {}".format(
+    email_info["date"], email_info["from"], email_info["subject"]))
