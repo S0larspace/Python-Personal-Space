@@ -1,0 +1,750 @@
+Received: from SA3PR02MB10065.namprd02.prod.outlook.com (2603:10b6:806:380::5)
+ by PH0PR02MB7590.namprd02.prod.outlook.com with HTTPS; Tue, 16 Sep 2025
+ 03:57:26 +0000
+Received: from SJ0PR03CA0341.namprd03.prod.outlook.com (2603:10b6:a03:39c::16)
+ by SA3PR02MB10065.namprd02.prod.outlook.com (2603:10b6:806:380::5) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9115.21; Tue, 16 Sep
+ 2025 03:57:24 +0000
+Received: from SJ5PEPF000001F6.namprd05.prod.outlook.com
+ (2603:10b6:a03:39c:cafe::bd) by SJ0PR03CA0341.outlook.office365.com
+ (2603:10b6:a03:39c::16) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9115.22 via Frontend Transport; Tue,
+ 16 Sep 2025 03:57:18 +0000
+Authentication-Results: spf=pass (sender IP is 69.72.43.13)
+ smtp.mailfrom=mg.icondo.asia; dkim=pass (signature was verified)
+ header.d=mg.icondo.asia;dmarc=bestguesspass action=none
+ header.from=mg.icondo.asia;compauth=pass reason=109
+Received-SPF: Pass (protection.outlook.com: domain of mg.icondo.asia
+ designates 69.72.43.13 as permitted sender) receiver=protection.outlook.com;
+ client-ip=69.72.43.13; helo=m43-13.mailgun.net; pr=C
+Received: from m43-13.mailgun.net (69.72.43.13) by
+ SJ5PEPF000001F6.mail.protection.outlook.com (10.167.242.74) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.9137.12 via Frontend Transport; Tue, 16 Sep 2025 03:57:24 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:2AEDDDBE26EA2965F11CB37ADD244943A8AD834BF747811AAA05FF34954FABB9;UpperCasedChecksum:30A75D562B04A85D54DACD41F0DAD75859233A771F974358CEEEDD556DAFBBE1;SizeAsReceived:1054;Count:13
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.icondo.asia; q=dns/txt; s=smtp; t=1757995044; x=1758002244;
+ h=Content-Type: Content-Transfer-Encoding: Message-Id: To: To: From: From: Subject: Subject: Mime-Version: Date: Sender: Sender;
+ bh=IbCE+DmwOh3Dg/z5e3XmgfLzmfosFAWuSfxdwrJ8jYs=;
+ b=vsNgVb5O9JmMxWbYIDqqyNwMg2dF0b9AzYR6ZrMoAFBzCw5cZF/8AofGy0N0tbk+8Y/f8T0CDRRPz02RY7Ki0vhZFYz6Fz1c9UYVRKRWxSDEv7TRDPL6a84btjR+nDuc7Rq3niEOebYFObUYZKaK8yAM+UEnI+TUG43OvKSZ/u4=
+X-Mailgun-Sid: WyJhNzM2ZSIsImJjeGQ5NkBob3RtYWlsLmNvbSIsIjQ1MWNlYyJd
+Received: by ca31e4bc36176b1612a52bde84340dff32e6484082660015602ba1dc42bbd1c3 with HTTP
+ id 68c8e024f1a27632cb1cc320; Tue, 16 Sep 2025 03:57:24 GMT
+X-Mailgun-Sending-Ip: 69.72.43.13
+Sender: no-reply@mg.icondo.asia
+Date: Tue, 16 Sep 2025 03:57:24 +0000
+Subject: Welcome to iCondo!
+From: iCondo <no-reply@mg.icondo.asia>
+To: bcxd96@hotmail.com
+Message-Id: <20250916035724.d0c563ef3e5616ae@mg.icondo.asia>
+Content-Transfer-Encoding: 7bit
+Content-Type: text/html; charset=ascii
+X-IncomingHeaderCount: 13
+Return-Path: bounce+2b181e.451cec-bcxd96=hotmail.com@mg.icondo.asia
+X-MS-Exchange-Organization-ExpirationStartTime: 16 Sep 2025 03:57:24.3620
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 6cd87da0-f796-421a-e93d-08ddf4d52511
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: SJ5PEPF000001F6:EE_|SA3PR02MB10065:EE_|PH0PR02MB7590:EE_
+X-MS-Exchange-Organization-AuthSource: SJ5PEPF000001F6.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 9/16/2025 3:51:16 AM
+X-MS-Office365-Filtering-Correlation-Id: 6cd87da0-f796-421a-e93d-08ddf4d52511
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 69.72.43.13
+X-SID-PRA: NO-REPLY@MG.ICONDO.ASIA
+X-SID-Result: PASS
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:4;ARA:1444111002|47200799021|58200799018|21080799006|10300799035|28045499009|12005499003|461199028|9000799053|29080799003|3412199025|440099028|16125499006|18021999003|26104999006|1122599019|1360799030|1370799030|1380799030|56899033;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Sep 2025 03:57:24.1045
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 6cd87da0-f796-421a-e93d-08ddf4d52511
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: SJ5PEPF000001F6.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA3PR02MB10065
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.1186684
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9115.005
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90010023)(91010020)(91040095)(9050020)(9100341)(944500132)(2008001181)(4810010)(4910033)(9575002)(10195002)(9320005)(120001)(1110175);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?VmJYTso59i6V0wSjjNwqGq1c/aSdXLW4Hb86VFIeZ7zoaMNEdIfsaZcIBNT8?=
+ =?us-ascii?Q?mFS18o3Lc49owm1a2zFfdfAuW0UPo0Ow6bA2hlnGr/XNniUNM3owsUaNLozR?=
+ =?us-ascii?Q?d9P1EawkbC3v0J40hOKsffg2OkbAd2PkKOpoSHYdawK+Bl7Cca4wk2sVctg4?=
+ =?us-ascii?Q?5g2CWQ7Rz+WbzLTshmFLo+Wtg8zcUcurGnIlGtOLNVzOZwn6lN3TkrEwvIWC?=
+ =?us-ascii?Q?wlRO2QHxkQO4ju34w91ehUqKEMpHwxrg9YFv1jXqa8ou5rcKnBVD8NaFdjPk?=
+ =?us-ascii?Q?oFSgVeSGm+YD8VS1/kcChuRlEE5W9MbUSgigA8sio7D86iQIN1X1AQW0iuPH?=
+ =?us-ascii?Q?Clv69s17Ej/auAMGl34BtEXx7YgbyuMPe8rFYrUKeWpIpL+WrLvG2jZej90T?=
+ =?us-ascii?Q?7hA0ZTtsZ/iP+TlyR+pq97qKldI8xDVKA0W01OZKLWJ0tPCU/NimXvjFWD7/?=
+ =?us-ascii?Q?A5sWNBjAE4VguM2B11MSubGbYFzCdUE+EhOnjXgJiRMhbR4m1QE2fbC3+odB?=
+ =?us-ascii?Q?Dgnjiq+auUJQMoJ0fIC5ySi6+S/slY7jMQV6q1CmZYkXAwJCX65BW7zmAH6J?=
+ =?us-ascii?Q?uKgvysvgByR7Ps2elMkSUkFbo0J1xGDO4EJmSO7aNMEnKTw8DGkski3A+xGO?=
+ =?us-ascii?Q?02F3zJQB0l8wN8Ep4FTW7QrnYCho1oNz3iaV+5QkEIU8A3ePJEp9MFCBPO35?=
+ =?us-ascii?Q?3EQ9n8qR3E80fMi0RVQMeIMmEBqJFaiUwDbEtfA/lty9d7+g+usyHdeQuoHT?=
+ =?us-ascii?Q?mkl8ZL9LXZIaG4NsjVTntJ89EIfoy9q4puzXZz2s9Ts8imdPLMbi8XT+tQhQ?=
+ =?us-ascii?Q?OuJ4O2Eg+DgUtmWPSTNX7SP/+vN3OIm1ZSnU014bNBXAhUSjSPZmQXBxl3Mf?=
+ =?us-ascii?Q?id/7Hq9oMnPze1XN17OXxVUcTvJsHR1iFz3PqSwjXInMKb3PKtzsciWUfAEC?=
+ =?us-ascii?Q?MAfilabsANA+aBccz4WX3yRUkxYVJEvioyd88JxvEQ1aQbL+ooFEhBY9O4bK?=
+ =?us-ascii?Q?gqi/6QAdejmdCP3JHNIxHd5UkUoFl7zlelFEEq6GYI2AGFDsOKMVqDpeUDGB?=
+ =?us-ascii?Q?fmrMLjA/+G6fxXQk963fkTVssVdcVPji0Yljik/GuGdw0kWnBd8x2Z4Ba6dx?=
+ =?us-ascii?Q?DQL9yMDhzzI4jM9Mou8a4PVgrIa7X4oG87PrX87LvCFBBBgkDTfY9IsqFOGP?=
+ =?us-ascii?Q?xrVegUACmwgUE1E2AYzgwuY3NrU6B8KbxEGNDas9pGsrMFLgyxdfkhXhYrYR?=
+ =?us-ascii?Q?ybxnUwxyB3NGNYZc4lAR6tJPo4bv4cWij2IVLPUIkpczTSp+I821tJhTFUdK?=
+ =?us-ascii?Q?cJ8oTkpXh5/FWAH4S7kX7AVrX3AqOZID9ljkX6to1FSDZ7xYqy568RhIh72w?=
+ =?us-ascii?Q?KWGMYKo+M9UEa9F3HXo8Tq4SCKef65aaxqSSoJevNVtssnlxG1zJ7LjZaBm3?=
+ =?us-ascii?Q?IJzSCNz2+mYJktY7lRA3djVGfGb3cYB31zG82qiedZiZcsh0w5WF74JyDuEO?=
+ =?us-ascii?Q?1GWsR6e3bpoX3Wiy8uJvMk/cmMbCu0Cq1RIoINI96jkhPO5kQgZYfPXndtsM?=
+ =?us-ascii?Q?G0yeOIv4rQoYk2KariFyG09hA0DpfoCne48KEKZ8pBPvxaX4FjP+aIFUt4j8?=
+ =?us-ascii?Q?Y/9WasAcJjWvZV+5E+gC5DIK/HWW7V+GG+xFQgn39YDfwnpPvb/HQKGNsu8A?=
+ =?us-ascii?Q?a6alcTDGPfoocxg8/zzW3W4qlEJiTZ5y0K+Cg0PkpZPKFP3is1ZIzp7VvWWN?=
+ =?us-ascii?Q?nGWB6JVYdyAKpXI7dfXOIlalnVHhpHseyl+05oe9hmBZBy04KuCsHrwCh2F4?=
+ =?us-ascii?Q?IbTucnvR2xGB5HCaAe+kjwfZnlXUQ8ViO8rY+yXTGcBK22RmuGFh+Wym3cWA?=
+ =?us-ascii?Q?S8cuwy15goeoEn9Jir5ZNOb49uqfoy3bM0EWpg/3TOfLVgktpClsGsVumsd5?=
+ =?us-ascii?Q?Jo7K5E6Vx7TNf+ze3pAW5yBpIRtb+Dmy6x9rcb1ht0Xc/zP0h17plD+3BrRi?=
+ =?us-ascii?Q?9b/9t5CLZiEokptI/RoFEl2HVupVlus4MeKYExl2eZRJMgSO7yrKw+C+8aUg?=
+ =?us-ascii?Q?eEwoS2iUcY5CmsKuRLKUlQPcyQU96IAZhebqJXz1Iz63M3IMq9M=3D?=
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <style data-premailer="ignore" id="template-styles-head">
+        table {
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .bgimage {
+            table-layout: auto;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+        a[x-apple-data-detectors] {
+            text-decoration: underline!important;
+            font-size: inherit!important;
+            font-family: inherit!important;
+            font-weight: inherit!important;
+            line-height: inherit!important;
+            color: inherit!important;
+        }
+
+        .editor-text {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+    <style type="text/css">
+        @media only screen and (max-width:480px) {
+            table {
+                border-collapse: collapse;
+            }
+            .main-width {
+                width: 100%!important;
+            }
+            .mobile-hidden {
+                display: none!important;
+            }
+            td.OneColumnMobile {
+                display: block!important;
+            }
+            .OneColumnMobile {
+                width: 100%!important;
+            }
+            .column .editor-text {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            .column .editor-image.editor-image-hspace-on td {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            .column .editor-button-container {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            .column .editor-social td {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            .column .block-margin {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            .column-left .editor-text {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            .column-left .editor-image.editor-image-hspace-on td {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            .column-left .editor-button-container {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            .column-left .editor-social td {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            .column-left .block-margin {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            .column-right .editor-text {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            .column-right .editor-image.editor-image-hspace-on td {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            .column-right .editor-button-container {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            .column-right .editor-social td {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            .column-right .block-margin {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            .editor-button td>table tr>td {
+                padding: 0px 0px 0px 0px!important;
+            }
+            .editor-button td>table tr>td td {
+                padding: 9px 15px 10px 15px!important;
+            }
+            .layout {
+                padding: 15px 9px 15px 9px!important;
+            }
+            .layout-container-border {
+                padding: 5px 5px 5px 5px!important;
+            }
+            .layout-container {
+                padding: 0px 0px 0px 0px!important;
+            }
+            .editor-image img {
+                width: auto!important;
+                margin-left: auto!important;
+                margin-right: auto!important;
+            }
+            .editor-image .image-cell {
+                padding-bottom: 15px!important;
+            }
+            .editor-text {
+                font-size: 16px!important;
+            }
+            .preheader-text {
+                font-size: 12px!important;
+            }
+            .section-headline-text {
+                font-size: 24px!important;
+            }
+            .headline-text {
+                font-size: 24px!important;
+            }
+            .subheadline-text {
+                font-size: 20px!important;
+            }
+            .feature {
+                padding-top: 0px!important;
+                padding-bottom: 0px!important;
+            }
+            .layout-outer {
+                padding: 0px 20px!important;
+            }
+            .feature-heading-text {
+                font-size: 20px!important;
+            }
+            .feature-text {
+                font-size: 16px!important;
+            }
+            .split {
+                border-top: 5px solid #FFFFFF;
+                border-bottom: 5px solid #FFFFFF;
+                padding: 5px 0px!important;
+            }
+            .split-layout-margin {
+                padding: 0px 20px!important;
+            }
+            .article {
+                padding-top: 0px!important;
+                padding-bottom: 0px!important;
+            }
+            .article-heading-text {
+                font-size: 20px!important;
+            }
+            .article-text {
+                font-size: 16px!important;
+            }
+            .social-text {
+                font-size: 14px!important;
+            }
+            .coupon {
+                padding: 10px 20px 10px 20px!important;
+            }
+            .coupon td.coupon-heading-text {
+                padding: 15px 10px 15px 10px!important;
+            }
+            .coupon td.coupon-heading-text {
+                font-size: 28px!important;
+            }
+            .coupon td.coupon-text {
+                padding: 10px 10px 10px 10px!important;
+            }
+            .coupon td.coupon-text {
+                font-size: 16px!important;
+            }
+            .action-block .editor-text {
+                padding-left: 0px!important;
+                padding-right: 0px!important;
+            }
+            .action-block .poll-answer {
+                width: 100%!important;
+                display: block!important;
+            }
+            .action-block .poll-button {
+                width: 100%!important;
+            }
+            .web-content .editor-text {
+                padding-left: 10px!important;
+                padding-right: 10px!important;
+            }
+            .web-content .editor-text {
+                padding-left: 10px!important;
+                padding-right: 10px!important;
+            }
+            div.MobileFooter {
+                font-size: 11px!important;
+            }
+            td.FooterMobile {
+                padding: 0px 10px 0px 10px!important;
+            }
+            td.MainCenter {
+                width: 100%!important;
+            }
+            table.MainSide {
+                display: none!important;
+            }
+            img.MainSide {
+                display: none!important;
+            }
+            td.MainSide {
+                display: none!important;
+            }
+            .rsvp .editor-text {
+                padding-left: 0px!important;
+                padding-right: 0px!important;
+            }
+            .rsvp-button-container {
+                padding-left: 0px!important;
+                padding-right: 0px!important;
+            }
+            .rsvp-button-inner {
+                padding-left: 0px!important;
+                padding-right: 0px!important;
+            }
+            .rsvp-inner {
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            td[class="footer-main-width"] {
+                width: 100%!important;
+            }
+            td[class="footer-mobile-hidden"] {
+                display: none!important;
+            }
+            span[class="footer-mobile-hidden"] {
+                display: none!important;
+            }
+            span[class~="footer-column"] {
+                display: block!important;
+            }
+        }
+
+        @media only screen and (max-width:320px) {
+            .layout {
+                padding: 0px 0px 0px 0px!important;
+            }
+        }
+    </style>
+</head>
+
+<body align="center" class="body" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px; min-width: 100%; padding: 0px; width: 100%;" marginwidth="0" marginheight="0">
+<table border="0" cellpadding="0" cellspacing="0" class="template-body" style="text-align: center;" width="100%">
+    <tbody>
+    <tr>
+        <td class="preheader-container">
+            <div>
+                <div id="preheader" style="color: transparent; display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+                    <span data-entity-ref="preheader">Your registration is successful</span>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" class="template-shell-container">
+            <div class="bgcolor" style="background: #FFFFFF;">
+                <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" class="bgimage" style="background: #FFFFFF;" width="100%">
+                    <tbody>
+                    <tr>
+                        <td align="center">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" class="main-width" style="width: 630px;" width="630">
+                                <tbody>
+                                <tr>
+                                    <td align="center" class="layout" style="padding: 15px 5px;" valign="top">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                            <tr>
+                                                <td align="center" bgcolor="#5BC6CC" class="layout-container-border" style="background: #5BC6CC; padding: 10px;" valign="top">
+                                                    <table align="center" bgcolor="#5BC6CC" border="0" cellpadding="0" cellspacing="0" style="background: #5BC6CC;" width="100%">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td align="center" bgcolor="#FFFFFF" class="layout-container" style="background: #FFFFFF; padding: 0;" valign="top">
+                                                                <div class="">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" class="galileo-ap-layout-editor" width="100%">
+                                                                        <tbody>
+                                                                        <tr>
+                                                                            <td align="" class="OneColumnMobile column" valign="top" width="100%">
+                                                                                <div class="gl-contains-image">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" class="editor-image editor-image  editor-image-vspace-on" width="100%">
+                                                                                        <tbody>
+                                                                                        <tr>
+                                                                                            <td align="center" style="padding-bottom: 10px; padding-top: 10px;" valign="top">
+                                                                                                <div class="publish-container">
+                                                                                                    <img alt="" border="0" class="" hspace="0" src="https://files.constantcontact.com/8f6715b9601/1bd04896-c365-4c0f-a9d1-6b2bc8e589d2.png" style="display: block; height: auto !important; max-width: 100% !important;" vspace="0" width="595">
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" class="galileo-ap-layout-editor" width="100%">
+                                                                        <tbody>
+                                                                        <tr>
+                                                                            <td align="" class="OneColumnMobile column" valign="top" width="100%">
+                                                                                <div class="gl-contains-image">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" class="editor-image editor-image  editor-image-vspace-on" width="100%">
+                                                                                        <tbody>
+                                                                                        <tr>
+                                                                                            <td align="center" style="padding-bottom: 10px; padding-top: 10px;" valign="top">
+                                                                                                <div class="publish-container">
+                                                                                                    <img alt="" border="0" class="" hspace="0" src="https://files.constantcontact.com/8f6715b9601/3371980a-d8c6-4079-9c1c-b88dd033e6fa.png" style="display: block; height: auto !important; max-width: 100% !important;" vspace="0" width="600">
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" class="galileo-ap-layout-editor" width="100%">
+                                                                        <tbody>
+                                                                        <tr>
+                                                                            <td align="" class="OneColumnMobile column" valign="top" width="100%">
+                                                                                <div class="gl-contains-divider">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" class="editor-divider" width="100%">
+                                                                                        <tbody>
+                                                                                        <tr>
+                                                                                            <td align="center" class="" valign="top">
+                                                                                                <table class="galileo-ap-content-editor" style="cursor: default;" width="100%">
+                                                                                                    <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="center" class="divider-base divider-solid" style="padding: 9px 0;" valign="top" width="100%">
+                                                                                                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="height: 1px; width: 94%;">
+                                                                                                                <tbody>
+                                                                                                                <tr>
+                                                                                                                    <td align="center" bgcolor="#5BC6CC" height="1" style="background: #5BC6CC; border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px;">
+                                                                                                                        <div><img alt="" border="0" height="1" hspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;" vspace="0" width="5"></div>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" class="galileo-ap-layout-editor" width="100%">
+                                                                        <tbody>
+                                                                        <tr>
+                                                                            <td align="left" class="spacer OneColumnMobile column" valign="top" width="100%">
+                                                                                <div class="gl-contains-spacer">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" class="editor-spacer" width="100%">
+                                                                                        <tbody>
+                                                                                        <tr>
+                                                                                            <td align="center" class="spacer-container" valign="top">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                                    <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="center" class="spacer-base" style="height: 1px; line-height: 1px; padding-bottom: 16px;" valign="top" width="100%">
+                                                                                                            <div><img alt="" border="0" height="1" hspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: 1px; width: 5px;" vspace="0" width="5"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" class="galileo-ap-layout-editor" width="100%">
+                                                                        <tbody>
+                                                                        <tr>
+                                                                            <td align="left" class="article OneColumnMobile column" valign="top" width="100%">
+                                                                                <div class="gl-contains-text">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                        <tbody>
+                                                                                        <tr>
+                                                                                            <td align="left" class="editor-text article-heading-text" style="color: #5BC6CC; display: block; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: bold; padding: 10px 20px; text-align: left; word-wrap: break-word;" valign="top">
+                                                                                                <div>
+                                                                                                </div>
+                                                                                                <div>
+                                                                                                    <div>
+                                                                                                        <div>Hi Brendan!
+                                                                                                            <br>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div class="gl-contains-text">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                        <tbody>
+                                                                                        <tr>
+                                                                                            <td align="left" class="editor-text article-text" style="color: #1f1f1f; display: block; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; padding: 10px 20px; text-align: left; word-wrap: break-word;" valign="top">
+                                                                                                <div>
+                                                                                                </div>
+                                                                                                <div style=";">
+                                                                                                    <div><span style="color: rgb(91, 198, 204); font-size: 20px;"></span></div>
+                                                                                                    <div>I am pleased to welcome you to&nbsp;<b><span style="color: #5BC6CC;">iCondo sunhaven</span>.&nbsp;</b></div>
+                                                                                                    <div>
+                                                                                                        <br>
+                                                                                                    </div>
+                                                                                                    <div></div>
+                                                                                                    <div>There are lots of exciting features for you to explore.</div>
+                                                                                                    <div>
+                                                                                                        <br>
+                                                                                                    </div>
+                                                                                                    <div>It brings new possibilities that will enhance your condo living experience.</div>
+                                                                                                    <div>
+                                                                                                        <br>
+                                                                                                    </div>
+                                                                                                    <div>Log on, get connected and start discovering.</div>
+                                                                                                    <div>
+                                                                                                        <br>
+                                                                                                    </div>
+                                                                                                    <div>
+                                                                                                        <br>
+                                                                                                    </div>
+                                                                                                    <div>Warmest regard,</div>
+                                                                                                    <div>
+                                                                                                        <br>
+                                                                                                    </div>
+                                                                                                    <div>The Management
+                                                                                                        <br>
+                                                                                                    </div>
+                                                                                                    <div>
+                                                                                                        <br>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" class="galileo-ap-layout-editor" width="100%">
+                                                                        <tbody>
+                                                                        <tr>
+                                                                            <td align="left" class="headline OneColumnMobile column" valign="top" width="100%">
+                                                                                <div class="gl-contains-text">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                        <tbody>
+                                                                                        <tr>
+                                                                                            <td align="left" class="editor-text headline-text" style="color: #5BC6CC; display: block; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 24px; font-weight: bold; padding: 10px 20px; text-align: center; word-wrap: break-word;" valign="top">
+                                                                                                <div>
+                                                                                                </div>
+                                                                                                <div>
+                                                                                                    <div>
+                                                                                                        <div>discover new possibilities</div>
+                                                                                                        <div>in condo living</div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" class="galileo-ap-layout-editor" width="100%">
+                                                                        <tbody>
+                                                                        <tr>
+                                                                            <td align="left" class="two-column OneColumnMobile column-left" valign="top" width="50%">
+                                                                                <div>
+                                                                                    <div class="column-resize-bar">
+                                                                                        <span class="line"></span>
+                                                                                        <span class="grabber"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="gl-contains-image">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" width="100%">
+                                                                                        <tbody>
+                                                                                        <tr>
+                                                                                            <td align="left" style="padding: 10px 10px 10px 20px;" valign="top">
+                                                                                                <div class="publish-container">
+                                                                                                    <img alt="" border="0" class="" hspace="0" src="https://files.constantcontact.com/8f6715b9601/fe188e2b-4814-4e41-9081-c6d34236fd43.png" style="display: block; height: auto; max-width: 100%;" vspace="0" width="260">
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div class="gl-contains-text">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                        <tbody>
+                                                                                        <tr>
+                                                                                            <td align="left" class="editor-text two-column-text" style="color: #1f1f1f; display: block; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; padding: 10px 10px 10px 20px; text-align: left; word-wrap: break-word;" valign="top">
+                                                                                                <div>
+                                                                                                </div>
+                                                                                                <div>
+                                                                                                    <div align="center" style="text-align: center;">
+                                                                                                        <div><span style="color: #FFB0A1;"><b>interact and meet</b></span></div>
+                                                                                                        <div><span style="color: #FFB0A1;"><b>new neighbours</b></span></div>
+                                                                                                        <div><b><br></b></div>
+                                                                                                        <div><span style="color: #FFB0A1;"><b>discover the community </b></span></div>
+                                                                                                        <div><span style="color: #FFB0A1;"><b>around you</b></span></div>
+                                                                                                        <div>
+                                                                                                            <br>
+                                                                                                        </div>
+                                                                                                        <div>
+                                                                                                            <br>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td align="left" class="two-column OneColumnMobile column-right" valign="top" width="50%">
+                                                                                <div class="gl-contains-image">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" width="100%">
+                                                                                        <tbody>
+                                                                                        <tr>
+                                                                                            <td align="right" style="padding: 10px 20px 10px 10px;" valign="top">
+                                                                                                <div class="publish-container">
+                                                                                                    <img alt="" border="0" class="" hspace="0" src="https://files.constantcontact.com/8f6715b9601/a46c7bb6-4d24-49b5-862a-712c5c5ef84b.png" style="display: block; height: auto; max-width: 100%;" vspace="0" width="260">
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div class="gl-contains-text">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                        <tbody>
+                                                                                        <tr>
+                                                                                            <td align="left" class="editor-text two-column-text" style="color: #1f1f1f; display: block; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; padding: 10px 20px 10px 10px; text-align: left; word-wrap: break-word;" valign="top">
+                                                                                                <div>
+                                                                                                </div>
+                                                                                                <div>
+                                                                                                    <div align="center" style="text-align: center;">
+                                                                                                        <div><span style="color: rgb(255, 176, 161); font-weight: bold;">connect and communicate</span></div>
+                                                                                                        <div><span style="color: rgb(255, 176, 161); font-weight: bold;">with management</span></div>
+                                                                                                        <div>
+                                                                                                            <br>
+                                                                                                        </div>
+                                                                                                        <div><span style="color: rgb(255, 176, 161);"><b>manage bookings, applications and</b></span></div>
+                                                                                                        <div><span style="color: rgb(255, 176, 161); font-weight: bold;">payment online</span>
+                                                                                                            <br>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+
+</html>
