@@ -16,6 +16,22 @@ email_info = {
     "subject": None,
     "date": None
 }
+
+spam_phrases = {
+    "free gift",
+    "don't miss",
+    "limited time offer",
+    "great deal",
+    "insane discounts",
+    "instantly",
+    "keep your little ones engaged",
+    "free membership",
+    "100%% guaranteed",
+    "100%% satisfaction",
+    "Time is running out",
+    "won't last forever"
+}  # Consider moving this into a separate text file to avoid lengthy code as this list grows
+
 with open(sampEmail_dir, encoding="utf-8", errors="ignore") as f:
     # C:\Users\Admin\Documents\Career\GitHub Repositories\Python-Personal-Space\Python Projects\Email Inbox Filter\sample_email_source.txt
     for line in f:
@@ -34,5 +50,6 @@ with open(sampEmail_dir, encoding="utf-8", errors="ignore") as f:
         elif line.startswith("Date:"):
             email_info["date"] = line[len("Date:"):].strip()
 
+# Output to terminal to test parsing logic
 print("Email details as follows:\nDate: {}\nFrom: {}\nSubject: {}".format(
     email_info["date"], email_info["from"], email_info["subject"]))
