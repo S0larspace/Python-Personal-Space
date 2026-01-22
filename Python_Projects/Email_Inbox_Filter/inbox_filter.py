@@ -12,10 +12,10 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 sampEmail_dir = os.path.join(script_dir, "sample_email_source.txt")
 
 email_info = {
-    "from": None,
-    "subject": None,
-    "date": None
-}
+    "from": "Unknown sender",
+    "subject": "No subject",
+    "date": "Unknown date"
+}  # Set default values to unknown if any of the headers are missing from the txt file
 
 spam_phrases = {
     "free gift",
@@ -29,7 +29,8 @@ spam_phrases = {
     "100%% guaranteed",
     "100%% satisfaction",
     "Time is running out",
-    "won't last forever"
+    "won't last forever",
+    "newsletter"
 }  # Consider moving this into a separate text file to avoid lengthy code as this list grows
 
 with open(sampEmail_dir, encoding="utf-8", errors="ignore") as f:
@@ -50,6 +51,20 @@ with open(sampEmail_dir, encoding="utf-8", errors="ignore") as f:
         elif line.startswith("Date:"):
             email_info["date"] = line[len("Date:"):].strip()
 
+        # Combine info from sender and subject into a single string for spam phrase checking
+        text_to_check = (
+            (email_info["subject"] or "") + " " + (email_info["from"]) or "").lower()
+
+        # function to detect spam
+        is_spam = any(phrase in text_to_check for phrase in spam_phrases)
+
+
 # Output to terminal to test parsing logic
 print("Email details as follows:\nDate: {}\nFrom: {}\nSubject: {}".format(
     email_info["date"], email_info["from"], email_info["subject"]))
+
+# Output to test spam detection logic
+if is_spam:
+    print("SPAM EMAIL DETECTED")
+else:
+    print("Email appears clean")
