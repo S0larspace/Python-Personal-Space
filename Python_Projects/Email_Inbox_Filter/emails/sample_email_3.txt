@@ -1,0 +1,564 @@
+Received: from SA3PR02MB10973.namprd02.prod.outlook.com
+ (2603:10b6:806:45f::11) by PH0PR02MB7590.namprd02.prod.outlook.com with
+ HTTPS; Mon, 1 Sep 2025 18:21:25 +0000
+Received: from CH2PR07CA0064.namprd07.prod.outlook.com (2603:10b6:610:5b::38)
+ by SA3PR02MB10973.namprd02.prod.outlook.com (2603:10b6:806:45f::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9052.29; Mon, 1 Sep
+ 2025 18:21:24 +0000
+Received: from CH1PEPF0000A348.namprd04.prod.outlook.com
+ (2603:10b6:610:5b:cafe::af) by CH2PR07CA0064.outlook.office365.com
+ (2603:10b6:610:5b::38) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9073.26 via Frontend Transport; Mon,
+ 1 Sep 2025 18:21:24 +0000
+Authentication-Results: spf=pass (sender IP is 54.240.10.221)
+ smtp.mailfrom=amazonses.com; dkim=pass (signature was verified)
+ header.d=mail.tinder.com;dkim=pass (signature was verified)
+ header.d=amazonses.com;dmarc=pass action=none
+ header.from=mail.tinder.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of amazonses.com designates
+ 54.240.10.221 as permitted sender) receiver=protection.outlook.com;
+ client-ip=54.240.10.221; helo=a10-221.smtp-out.amazonses.com; pr=C
+Received: from a10-221.smtp-out.amazonses.com (54.240.10.221) by
+ CH1PEPF0000A348.mail.protection.outlook.com (10.167.244.4) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9094.14
+ via Frontend Transport; Mon, 1 Sep 2025 18:21:24 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:3C5EBDB591F69D51BB97B521C48C9FF24D36FDFF1499A42862737FCBE2C28EFB;UpperCasedChecksum:DA58D1DE96C4F8E5ABAAA0B4936BD57DF11E26493E1C612C728EA5E123F67CCA;SizeAsReceived:1430;Count:12
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=y4by6nr65rpjdotkl43rmkj6l3frdpoj; d=mail.tinder.com;
+	t=1756750883;
+	h=From:Reply-To:To:Subject:MIME-Version:Content-Type:Message-ID:Date;
+	bh=rXMkyj8L7dtlvT49AqlY6jIqNoJsp3ji2F49NbjUtm4=;
+	b=UaVnQ3+BTxvF3740DSDHvEg9WsYwXpJWBZpJIJEn24WY11ryfauL91I5I/qoxgo6
+	aspaBxVDO5jkzuYl62ZjbySoIV7XEvNhGiHR/gQ5IEVCLM0KFaVKusN7WazoUxYQv+j
+	OR6OTchAI3R+9CzIM2+nty7LRZ9H15coyeks5OWU=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw; d=amazonses.com; t=1756750883;
+	h=From:Reply-To:To:Subject:MIME-Version:Content-Type:Message-ID:Date:Feedback-ID;
+	bh=rXMkyj8L7dtlvT49AqlY6jIqNoJsp3ji2F49NbjUtm4=;
+	b=h4VIdMZ+CyVMZ9FTXCs78+lP1efD3WsEUusShtWgsLpqfQq6btM9VhDGbqZJhHFN
+	Kj+FXIOFp/qdzaG7b6LW5N030oqOQaux42v/rRl9j1yA7jPDZbAy/JUhIn5wpA6VRsS
+	2r74TNqhA16iJcDyklYeVGprZke2uxvDfTW/gEAs=
+From: Tinder <tinder@mail.tinder.com>
+Reply-To: tinder@mail.tinder.com
+To: bcxd96@hotmail.com
+Subject: =?UTF-8?Q?You_have_a_free_Super_Like_=F0=9F=92=99?=
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_332297_2146775134.1756750883781"
+Message-ID: <0100019906832bc4-a30d3f6f-d9a5-4044-a4ae-8db846d0e219-000000@email.amazonses.com>
+Date: Mon, 1 Sep 2025 18:21:23 +0000
+Feedback-ID: ::1.us-east-1.Ck1oRKpN+qvxsgBZLJf48Pvz21guLtXQi1UxeiOPJ/k=:AmazonSES
+X-SES-Outgoing: 2025.09.01-54.240.10.221
+X-IncomingHeaderCount: 12
+Return-Path: 0100019906832bc4-a30d3f6f-d9a5-4044-a4ae-8db846d0e219-000000@amazonses.com
+X-MS-Exchange-Organization-ExpirationStartTime: 01 Sep 2025 18:21:24.3614
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: c087c58e-4e3a-4691-d26f-08dde9845beb
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: CH1PEPF0000A348:EE_|SA3PR02MB10973:EE_|PH0PR02MB7590:EE_
+X-MS-Exchange-Organization-AuthSource: CH1PEPF0000A348.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 9/1/2025 6:08:24 PM
+X-MS-Office365-Filtering-Correlation-Id: c087c58e-4e3a-4691-d26f-08dde9845beb
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 54.240.10.221
+X-SID-PRA: TINDER@MAIL.TINDER.COM
+X-SID-Result: PASS
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:4;ARA:1444111002|12005499003|1680799057|9400799033|461199028|6401999021|42300799018|58200799018|47200799021|5101999024|5301999021|21080799006|10300799035|16002599021|9000799050|28045499009|68400799013|56899033|1380799030|1370799030|1360799030|1602099012|11135499009|1290799030|4601999015|440099028|3412199025|4302099013|160899965|21101999018|1122599019|18021999003|18042799006|2406899039;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 01 Sep 2025 18:21:24.2557
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: c087c58e-4e3a-4691-d26f-08dde9845beb
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: CH1PEPF0000A348.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA3PR02MB10973
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.2187352
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9052.027
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90010023)(91010020)(91040095)(9050020)(9100341)(944500132)(2008001181)(4810010)(4910033)(9575002)(10195002)(9320005)(120001)(1110175);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?ZVQyb0VZTmN1amRqYXlNckdpZEgvUmZ0aEVlRS9ER3dBTVVtUSsyV0Y5V3JQ?=
+ =?utf-8?B?a1Fadm45SFEyMjdrelVzT284WUI4cmlrTUFSZDUyMHFiMEpBR25vZFhMa014?=
+ =?utf-8?B?WVFCT3VIUnp2c3hyNHFxMDl5OW92TDQxN2N6aVBKOGVSdkE3Y3ZBdFdCL0pI?=
+ =?utf-8?B?K1hDK0RtM1ZrQWNROHZMN1VtdTZ1NVJGajYyMmFZcjBHRHUyRmdYT25udWNS?=
+ =?utf-8?B?bmVPY0xiQ2JQQmlTSmhrVnJzZkdDbGhXQkdrUHNjSXQrN0E0YTZpSWJVRWlt?=
+ =?utf-8?B?Wjk3eEJyYjE5WjB6V0VzazdwazRxNC9IY3ZaSWdoWG5SYUVsSWdXT3BHcExP?=
+ =?utf-8?B?MGxFYVdqRzM1WkRpbW4vUzhhL3Y4YzZia2xCYTI1aENyMzZVUHFWQjB0U0xK?=
+ =?utf-8?B?YnpHTTF6eEFwWVVONm1qUHBSSDVmU2lJVDZ4WU5uRlhyU1dPWDc3aWhlNUx3?=
+ =?utf-8?B?WEFEUXNaanBlSStNNVQ2T01Ub2NMbEZhMGlPaEdIemUxVjAyWHBIUG5acFVR?=
+ =?utf-8?B?endPR1BwT3BHZzJoRGdkaDdtRnFVNGlQMml0QTZDVG1PY1Qyek8xWVRLaHph?=
+ =?utf-8?B?TWI5SW1hdEwxWXl1QWRRMGk4VHBUVE9teGo1L0FqY2lDOWl3UWplS2hLaDUv?=
+ =?utf-8?B?Uzg3azc2NUdrM0xRUWgwVndDN2RKVkwybmJTUDJuZm1tck43N1Y4SWljNE5w?=
+ =?utf-8?B?SDBZbEY0NmRCSmxnT0xSL0U1ck9lWjdaY0hXR1RaYkxtZ2hpSlZyVUdLT0tY?=
+ =?utf-8?B?WnRWR0MyTWlVR0VyVERzN1F2ZktzUGkzRDJQdGFBbHFScEtFaXBVUFluN1U4?=
+ =?utf-8?B?bUQwbEhGdWxrekx0eU5nZG5CeDB1RjJmcDViRzgwVW9sR0VFaGQvSG05R3Fn?=
+ =?utf-8?B?c1pwa2lVay9jS0NTMytjQkF5c21ST1Nhb21EZk1TQkFSSVQwUzc5c3Q1Q0JF?=
+ =?utf-8?B?Y3NtVnpnWURQc2FveWxWSVhkcVFGY1RKTE1QU3UyMjJncTRuRUd5ckk3aElp?=
+ =?utf-8?B?NW1RazNEdExyUlNMdWJTcFQ0Z1hZcE5HQ0lqUHprd3Zpd3QrZ3BzSXFQaXhD?=
+ =?utf-8?B?alBBZWJ3RWx1YStEK0xMMWxQb0phcDJUZEZLZnkxVThqbnhvY29IOHFIZ0dp?=
+ =?utf-8?B?QS9oUWphazE4VVpaYWRxMlRtNHZaMXVtWW5KNm91MWNzWWFGM0lpdC94ZVN5?=
+ =?utf-8?B?Um4rdEpoYktleUVKR21OSjZCNkxBSUlNdkpodUpseEpSZDNOWTJINDAvcWhr?=
+ =?utf-8?B?dnhiNEpuTHZQditFTmpQNlZHcWlDUlp6MFYvOXBDVitYZElRNncwV3dSdUtz?=
+ =?utf-8?B?NWZpaHdHOG1pWTRYKzBjbE9ndThuODZ2YS9vc2RnalltekFLZVJZZHFocmtQ?=
+ =?utf-8?B?QUV2b3V3OWgyNWxoNGtjYUpOVG1oREZzTVZENy9Jck04THg1MGFnSHVlTFNI?=
+ =?utf-8?B?Sk1PN2V1c1Y5NFVMVkpFaHl2OHNiSXdhbnZ5WVc1NFVVMXo4NUNtYTUwMWhR?=
+ =?utf-8?B?WXc4Q0FQaDdIU3UveHdnQkxoWXRTcTViVTg4eWZiVlR3VFk3RXcyc25CUUVl?=
+ =?utf-8?B?SklpREQ3R1o1TytrbWpkZitSUFUyNWJsY3FtdzY2R1gwRDZZSGQxWnBaTnNT?=
+ =?utf-8?B?dml3SVBFWVpodFJTMnpnUGYyZ3FDR1o4V1pVTTZqWENndDRCVzEyNWtzYUZo?=
+ =?utf-8?B?aEdoNTFROUFiYTE5eTlVMWppR2l3TlZtdC9BWTFUdWNJdEtxVkd5SzFZYnI2?=
+ =?utf-8?B?bXBYWTBZemk4aXZ6UG9HdUZKczk4R3BLNVg2dCt1R0FONWhoaTM3dE55czZY?=
+ =?utf-8?B?aklqdUhyZTlJM2Zsa3U1cWNOL2dHQ3JLRUYraDBGV2k4OUk4TEZCNlVIZFR1?=
+ =?utf-8?B?enBjdTZzakI3WjA1UCtxbUNsOGFISGxid3lNNXhNMVFSOFh0Q25WUEF0SDQx?=
+ =?utf-8?B?WFQ4WTgwM0ZlNHdnYzhZL0Y2c2drMjBtM2l2V0xnSlpVMjZTTjBPWmZ2RGIx?=
+ =?utf-8?B?bmxVRzB6V0FWSUxtbCttVmhzbVpkTGlSZFJ1ZVUzVGVCbnlidTBoVXlobHJ4?=
+ =?utf-8?B?eHhGYWRHZXk4VFBvT2FXcWxYbUpjQk1rQkQyZytKeDZ4NGZBZzd3Y3hSK3VI?=
+ =?utf-8?B?dVpuSnpiOXpGby9pLzc5Z1NaT1NpaWJzTmpBNzRaZmNvV2xIM1psTW50d0RY?=
+ =?utf-8?B?UmJ0cTJWaUI2bXdJbElWa25zL3hpa2dkT09xM05nbk93NzJoeS9PazZPcjdK?=
+ =?utf-8?B?bHhnSDFHSUF4VWVXd0FpR29SZVd1NC9PWlNDdlB0T3o0U3ZLM0pUZ0dZeUM4?=
+ =?utf-8?B?K0NHcmZ3K2N0Z01xYktIYmVMNTdHSVZyR0ZMcWowZHVLdHJwVHZsWDJvcnFa?=
+ =?utf-8?B?UFBhb0xMSXc1RSt5SVFIOHJWRFhpQjREa2tPRnNmMEVBMnBXbEZMSlg0dU9S?=
+ =?utf-8?B?TTJSMkkvZVQrWE5rb0RYbmJWdG10aWxwblpPVy9SWGlPQ1Zudk94dWdsbGI2?=
+ =?utf-8?B?L3c2emplR3RNMXBXQkpUN3BmTVgyWjkvU0Y0N1E5MTI3NlJ2bVBJZEFKY29V?=
+ =?utf-8?B?QWtPT2VmSTFxUFA0UmpBd2h6c0g3c2lCVDlyLzNZRGRIWXJoWDhicVdXVW1H?=
+ =?utf-8?B?NVB5MXQ5eVZCbFZ5YjI4R3h1S2pxOVdxYytTc3dSMXp3N2grNWJzY3l4RGdV?=
+ =?utf-8?B?NThRSElXVGdKVEMzcGxCOGVVNTRJOEorT2FvcnVQYjlWRG0yaEtRVTluYU9T?=
+ =?utf-8?B?NDZ2aURmOHN4R0NaTXFKNzNJRkxaVlAwRlBPNTc1MEtyY2Y4SDVyR3Yxb3Vo?=
+ =?utf-8?B?VW5FVU5rVmpmSjZoMFp1MHJseWc1Rm55aDZwTGNLdDY0Y2NKdE5GL2h4YjVS?=
+ =?utf-8?B?WDd1eWdOL09tTUVhTUEvRldWVWkyenlndWdEQXIzbEdTNlJ2VUJPV2RmcWpS?=
+ =?utf-8?B?cTB0em5DY2paelNyd0FhWHlVS3lzdCtZbkd5TlYwZjhILytSYUJreEhiUzBp?=
+ =?utf-8?B?MGFWUHB2R0FUWnd5RmFGQTdTNE5vcTRsd1YyWFlsZk02UHJqci84T1YzM2pG?=
+ =?utf-8?B?aExwQmloK0h0TnFBPT0=?=
+MIME-Version: 1.0
+
+------=_Part_332297_2146775134.1756750883781
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+------=_Part_332297_2146775134.1756750883781
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html lang=3D"en" xmlns=3D"ht=
+tp://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns=
+:o=3D"urn:schemas-microsoft-com:office:office"><head><!--[if gte mso 9]>
+	<xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+	</xml>
+	<![endif]-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1, m=
+aximum-scale=3D1">
+	<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+	<meta name=3D"format-detection" content=3D"date=3Dno">
+	<meta name=3D"format-detection" content=3D"address=3Dno">
+	<meta name=3D"format-detection" content=3D"telephone=3Dno">
+	<meta name=3D"x-apple-disable-message-reformatting">
+	<link data-react-helmet=3D"true" rel=3D"apple-touch-icon" sizes=3D"180x180=
+" href=3D"https://tinder.com/static/apple-touch-icon.png">
+	<link data-react-helmet=3D"true" rel=3D"icon" type=3D"image/png" href=3D"h=
+ttps://tinder.com/favicon-32x32.png" sizes=3D"32x32">
+	<title>Tinder | Match. Chat. Date.</title>
+	<!--[if !mso]><!-->
+	<style type=3D"text/css" media=3D"all">
+		@import url('https://fonts.googleapis.com/css2?family=3DRoboto:ital,wght@=
+0,400;0,700;1,400;1,700&display=3Dswap');
+	</style>
+	<!--<![endif]-->
+	<!--[if gte mso 9]>
+	<style type=3D"text/css" media=3D"all">
+		sup { font-size: 100% !important; }
+	</style>
+	<![endif]-->
+=09
+
+	<style type=3D"text/css" media=3D"screen">
+		body { padding:0 !important; margin:0 auto !important; display:block !imp=
+ortant; min-width:100% !important; width:100% !important; background:#fffff=
+e; -webkit-text-size-adjust:none }
+		a { color:#FD267A; text-decoration-color:#FD267A }
+		p { margin:0 !important }=20
+
+		table { mso-table-lspace:0pt; mso-table-rspace:0pt; }
+		img { margin: 0 !important; -ms-interpolation-mode: bicubic; /* Allow smo=
+other rendering of resized image in Internet Explorer */ }
+		img, a img{ border:0; outline:none; text-decoration:none; }
+		#outlook a { padding:0; }
+		.ReadMsgBody { width:100%; }
+		.ExternalClass { width:100%; }
+		div,p,a,li,td,blockquote { mso-line-height-rule:exactly; }
+		a[href^=3Dtel],a[href^=3Dsms] { color:inherit; text-decoration:none; }
+		.ExternalClass, .ExternalClass p, .ExternalClass td, .ExternalClass div, =
+.ExternalClass span, .ExternalClass font { line-height:100%; }
+		a[x-apple-data-detectors] { color:inherit !important; text-decoration:non=
+e !important; font-size:inherit !important; font-family:inherit !important;=
+ font-weight:inherit !important; line-height:inherit !important; }
+		#MessageViewBody, #MessageWebViewDiv { width: 100% !important; } /* Samsu=
+ng Galaxy Note 4 Samsung Mail - make email stay centered */
+		.dijitReset { color: #000001 !important; }
+		.x-gmail-data-detectors, .x-gmail-data-detectors *, .aBn { border-bottom:=
+ 0 !important; cursor: default !important; } /* A work-around for Gmail med=
+dling in triggered links. */
+		.a6S { display: none !important; opacity: 001 !important; } /* Prevents G=
+mail from displaying an download button on large, non-linked images. */
+		img.g-img + div { display:none !important; } /* If the above doesn't work=
+, add a .g-img class to any image in question. */
+		/*u + #body a { color: inherit !important; font-size: inherit !important;=
+ font-family: inherit !important; font-weight: inherit !important; line-hei=
+ght: inherit !important; }*/
+		#MessageViewBody a { color: inherit !important; font-size: inherit !impor=
+tant; font-family: inherit !important; font-weight: inherit !important; lin=
+e-height: inherit !important; }
+	=09
+	=09
+		.btn a { display: block; text-decoration: none; }
+		.btn-8-30 a { padding: 8px 30px; }
+		.btn-11-37 a { padding: 11px 37px; }
+
+		.l-grey a { color: #A7A5A8; }
+		.l-white a { color: #fffffe; }
+		.l-black a { color: #000001; }
+
+		/* Mobile styles */
+		@media only screen and (max-device-width: 480px), only screen and (max-wi=
+dth: 480px) {
+			.mfz-28 { font-size: 28px !important; }
+
+			.mlh-34 { line-height: 34px !important; }
+
+			.mfz-16 { font-size: 16px !important; }
+
+			.mlh-20 { line-height: 20px !important; }
+
+			.mfz-14 { font-size: 14px !important; }
+
+			.mlh-18 { line-height: 18px !important; }
+
+			.mpb-15 { padding-bottom: 15px !important; }
+
+			.mfz-22 { font-size: 22px !important; }
+
+			.mlh-26 { line-height: 26px !important; }
+
+			.mfz-12 { font-size: 12px !important; }
+
+			.m-shell { width: 100% !important; min-width: 100% !important; }
+
+			.mt-left { text-align: left !important; }
+			.mt-center { text-align: center !important; }
+		=09
+			.me-left { margin-right: auto !important; }
+			.me-center { margin: 0 auto !important; }
+
+			.mh-auto { height: auto !important; }
+			.mw-auto { width: auto !important; }
+
+			.fluid-img img { width: 100% !important; max-width: 100% !important; hei=
+ght: auto !important; }
+
+			.column,
+			.column-top,
+			.column-dir,
+			.column-dir-top { float: left !important; width: 100% !important; displa=
+y: block !important; }
+
+			.m-hide { display: none !important; width: 0 !important; height: 0 !impo=
+rtant; font-size: 0 !important; line-height: 0 !important; min-height: 0 !i=
+mportant; }
+			.m-block { display: block !important; }
+
+			.mw-100p { width: 100% !important; }
+		}
+	</style>
+
+</head>
+<body class=3D"body" id=3D"body" style=3D"padding:0 !important; margin:0 au=
+to !important; display:block !important; min-width:100% !important; width:1=
+00% !important; background:#fffffe; -webkit-text-size-adjust:none;">
+	<center>
+		<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" st=
+yle=3D"margin: 0; padding: 0;" bgcolor=3D"#fffffe">
+			<!-- Preview Text -->
+ <div style=3D"font-size:0px;line-height:1px;mso-line-height-rule:exactly;d=
+isplay:none;max-width:0px;max-height:0px;opacity:0;overflow:hidden;mso-hide=
+:all;">
+Open to learn more =F0=9F=91=89
+</div>
+           =20
+			<!-- END Preview Text -->
+           =20
+             <!-- Fix to prevent preview email content after the subject --=
+>
+                  <tr>
+                    <td style=3D"font-size: 0pt; line-height: 0pt;">
+                      &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &n=
+bsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
+=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
+=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
+sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
+=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
+&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
+=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
+=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
+sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
+=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
+&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
+=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
+=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
+sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
+=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
+&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
+=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
+=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
+sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
+=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
+&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
+=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
+=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
+sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
+=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
+&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
+=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C
+                     =20
+                    </td>
+                  </tr>
+                  <!-- END Fix to prevent preview email content after the s=
+ubject -->
+           =20
+			<tr>
+				<td style=3D"margin: 0; padding: 0;" align=3D"center" valign=3D"top">
+					<table width=3D"480" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+class=3D"m-shell">
+						<tr>
+							<td style=3D"padding: 20px;">
+								<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0">
+									<!-- Header -->
+									<tr>
+										<td style=3D"border-bottom: 2px solid #d3d8dc; font-size:0pt; lin=
+e-height:0pt; text-align:left; padding-bottom: 36px;">
+											<a href=3D"https://na01.safelinks.protection.outlook.com/?url=3D=
+https%3A%2F%2F1g71brhi.r.us-east-1.awstrack.me%2FL0%2Fhttps%3A%252F%252Ftin=
+der.com%252F%2F1%2F0100019906832bc4-a30d3f6f-d9a5-4044-a4ae-8db846d0e219-00=
+0000%2FEw0mYEeUBxq2jF1Hoa1Lu8PSJqU%3D441&amp;data=3D05%7C02%7C%7Cc087c58e4e=
+3a4691d26f08dde9845beb%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6389234=
+76861513453%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDA=
+wMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdat=
+a=3Dy66zRIhdWFfkmdLtpJJmg1I%2FJSsNLg3I6p0jk856bdI%3D&amp;reserved=3D0" orig=
+inalsrc=3D"https://1g71brhi.r.us-east-1.awstrack.me/L0/https:%2F%2Ftinder.c=
+om%2F/1/0100019906832bc4-a30d3f6f-d9a5-4044-a4ae-8db846d0e219-000000/Ew0mYE=
+eUBxq2jF1Hoa1Lu8PSJqU=3D441" target=3D"_blank">
+												<img src=3D"https://inboxcrm-ssl.gotinder.com/fb551cc0-829c-414=
+0-b8f5-0faec637fa9b.png" width=3D"102" height=3D"25" border=3D"0" alt=3D"Ti=
+nder">
+											</a>
+										</td>
+									</tr>
+									<!-- END Header -->
+
+									<!-- Intro -->
+									<tr>
+										<td class=3D"mfz-28 mlh-34" style=3D"font-weight: bold; color:#21=
+262E; font-family:'Roboto', Arial, sans-serif; text-align:left; font-size: =
+42px; line-height: 50px; padding-top: 3px; padding-bottom: 28px;">
+											<br>Stand out on Tinder with a free Super Like
+										</td>
+									</tr>
+								=09
+                                    <!-- Image Center -->
+                                     <tr>=20
+                                        <td class=3D"img-center pb-25" styl=
+e=3D"font-size:0pt; line-height:0pt; text-align:center; padding-bottom: 25p=
+x;">
+                                            <a href=3D"https://na01.safelin=
+ks.protection.outlook.com/?url=3Dhttps%3A%2F%2F1g71brhi.r.us-east-1.awstrac=
+k.me%2FL0%2Fhttps%3A%252F%252Fgo.tinder.com%252F32rsRSwiCdb%2F1%2F010001990=
+6832bc4-a30d3f6f-d9a5-4044-a4ae-8db846d0e219-000000%2FOeYjA59lJe3oYljnPkqDA=
+PPNBJg%3D441&amp;data=3D05%7C02%7C%7Cc087c58e4e3a4691d26f08dde9845beb%7C84d=
+f9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638923476861556112%7CUnknown%7CTWFp=
+bGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjo=
+iTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DY8610sLbY0EvTC47sS1EP3Yj=
+KXv3wxJbBcdRyUVw9Hk%3D&amp;reserved=3D0" originalsrc=3D"https://1g71brhi.r.=
+us-east-1.awstrack.me/L0/https:%2F%2Fgo.tinder.com%2F32rsRSwiCdb/1/01000199=
+06832bc4-a30d3f6f-d9a5-4044-a4ae-8db846d0e219-000000/OeYjA59lJe3oYljnPkqDAP=
+PNBJg=3D441">
+                                                <img src=3D"https://inboxcr=
+m-ssl.gotinder.com/a97f4bdb-9335-4b86-943a-8349a5ff126d.jpeg" width=3D"530"=
+ height=3D"" border=3D"0" alt=3D""></a>
+                                        </td>
+                                    </tr>
+                                    <!-- END Image Center -->
+                                   =20
+									<!-- Text -->
+						=09
+									<tr>
+										<td class=3D"text-16 c-dgrey mfz-14 mlh-18 ltsp-1 pb-50 px-40 mpx=
+-15 mpb-40" style=3D"font-size:16px; line-height:30px; font-family:Arial, s=
+ans-serif; text-align:left; min-width:auto !important; color:#323232; lette=
+r-spacing: 1px; padding-bottom: 50px; padding-left: 40px; padding-right: 40=
+px;">
+                                           =20
+                                            Make your move! Send a free Sup=
+er Like to show you=E2=80=99re really into them.<br><br>
+   =20
+                                        </td>
+									</tr>
+									<!-- END Text -->
+
+
+									<!-- Button -->
+									<tr>
+										<td align=3D"center" style=3D"border-bottom: 2px solid #d3d8dc; f=
+ont-size:0pt; line-height:10pt; padding-bottom: 36px;">
+											<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D=
+"border-radius: 100px;" bgcolor=3D"#FD267A">
+												<tr>
+													<td class=3D"btn btn-11-37 mfz-14 mlh-18 l-white" style=3D"let=
+ter-spacing: 0.5px; font-weight: bold; font-family:'Roboto', Arial, sans-se=
+rif; text-align:center; mso-padding-alt:11px 37px; font-size: 20px; line-he=
+ight: 24px; color:#fffffe;">
+														<a href=3D"https://na01.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2F1g71brhi.r.us-east-1.awstrack.me%2FL0%2Fhttps%3A%252F%252F=
+go.tinder.com%252FD3zfREwad1%2F1%2F0100019906832bc4-a30d3f6f-d9a5-4044-a4ae=
+-8db846d0e219-000000%2FgkUYEn7wesJaxllg0sICxEIyanA%3D441&amp;data=3D05%7C02=
+%7C%7Cc087c58e4e3a4691d26f08dde9845beb%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7=
+C1%7C0%7C638923476861590284%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWU=
+sIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7=
+C%7C%7C&amp;sdata=3Deedl10QXqBZiyaHPEI1DpwM2WaBFoJLHM9zom967Y28%3D&amp;rese=
+rved=3D0" originalsrc=3D"https://1g71brhi.r.us-east-1.awstrack.me/L0/https:=
+%2F%2Fgo.tinder.com%2FD3zfREwad1/1/0100019906832bc4-a30d3f6f-d9a5-4044-a4ae=
+-8db846d0e219-000000/gkUYEn7wesJaxllg0sICxEIyanA=3D441" target=3D"_blank" c=
+lass=3D"link" style=3D"display: block; padding: 11px 37px; text-decoration:=
+none; color:#fffffe;">
+															Open Tinder
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- END Button -->
+                                   =20
+                                    <!-- Footer -->
+									<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"padding-top: 25px"> <tr>  	<td class=3D"plr-0" style=3D"pad=
+ding: 0 20px;">  		<table border=3D"0" width=3D"100%" cellspacing=3D"0" cel=
+lpadding=3D"0">  			<tbody>  				<tr>  					<td style=3D"padding-bottom: 25=
+px;" align=3D"center">  						<table border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0">  							<tbody>  								<tr>  									<td class=3D"img-center=
+ mw-30" style=3D"font-size: 0pt; line-height: 0pt; text-align: center;" wid=
+th=3D"50"><a href=3D"https://na01.safelinks.protection.outlook.com/?url=3Dh=
+ttps%3A%2F%2F1g71brhi.r.us-east-1.awstrack.me%2FL0%2Fhttps%3A%252F%252Fwww.=
+instagram.com%252Ftinder%252F%2F1%2F0100019906832bc4-a30d3f6f-d9a5-4044-a4a=
+e-8db846d0e219-000000%2Fc6IVhKDOSW1lsMSHeFeY27ZWnIs%3D441&amp;data=3D05%7C0=
+2%7C%7Cc087c58e4e3a4691d26f08dde9845beb%7C84df9e7fe9f640afb435aaaaaaaaaaaa%=
+7C1%7C0%7C638923476861618997%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydW=
+UsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%=
+7C%7C%7C&amp;sdata=3DBf%2FqvtnYdsxuQ7RQoVNlS9TbxP5KyAQzOs1d333hSlo%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://1g71brhi.r.us-east-1.awstrack.me/L0/htt=
+ps:%2F%2Fwww.instagram.com%2Ftinder%2F/1/0100019906832bc4-a30d3f6f-d9a5-404=
+4-a4ae-8db846d0e219-000000/c6IVhKDOSW1lsMSHeFeY27ZWnIs=3D441" target=3D"_bl=
+ank" rel=3D"noopener noreferrer"><img src=3D"https://marketing-images.gotin=
+der.com/fb770f99448e4547ab9b64a0db22aa98/1.png" alt=3D"" width=3D"44" heigh=
+t=3D"44" border=3D"0"></a></td>  									<td class=3D"img" style=3D"font-s=
+ize: 0pt; line-height: 0pt; text-align: left;" width=3D"14">&nbsp;</td>  		=
+							<td class=3D"img-center mw-30" style=3D"font-size: 0pt; line-height:=
+ 0pt; text-align: center;" width=3D"50"><a href=3D"https://na01.safelinks.p=
+rotection.outlook.com/?url=3Dhttps%3A%2F%2F1g71brhi.r.us-east-1.awstrack.me=
+%2FL0%2Fhttps%3A%252F%252Fx.com%252FTinder%2F1%2F0100019906832bc4-a30d3f6f-=
+d9a5-4044-a4ae-8db846d0e219-000000%2FdnmXp2yvw0KnO2wGVJZxn0Y61ZY%3D441&amp;=
+data=3D05%7C02%7C%7Cc087c58e4e3a4691d26f08dde9845beb%7C84df9e7fe9f640afb435=
+aaaaaaaaaaaa%7C1%7C0%7C638923476861637753%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0e=
+U1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoy=
+fQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DeIjSsgibWkOxl9wVPnjCJDmvjL%2B%2Fb6oDk2%2B=
+pNxIO%2B7w%3D&amp;reserved=3D0" originalsrc=3D"https://1g71brhi.r.us-east-1=
+.awstrack.me/L0/https:%2F%2Fx.com%2FTinder/1/0100019906832bc4-a30d3f6f-d9a5=
+-4044-a4ae-8db846d0e219-000000/dnmXp2yvw0KnO2wGVJZxn0Y61ZY=3D441" target=3D=
+"_blank" rel=3D"noopener noreferrer"><img src=3D"https://inboxcrm-ssl.gotin=
+der.com/243b90e9-d8c6-4817-9063-f72be4544ba7.png" alt=3D"" width=3D"44" hei=
+ght=3D"44" border=3D"0"></a></td>  									<td class=3D"img" style=3D"font=
+-size: 0pt; line-height: 0pt; text-align: left;" width=3D"14">&nbsp;</td> <=
+td class=3D"img-center mw-30" style=3D"font-size: 0pt; line-height: 0pt; te=
+xt-align: center;" width=3D"50"><a href=3D"https://na01.safelinks.protectio=
+n.outlook.com/?url=3Dhttps%3A%2F%2F1g71brhi.r.us-east-1.awstrack.me%2FL0%2F=
+https%3A%252F%252Fwww.facebook.com%252Ftinder%2F1%2F0100019906832bc4-a30d3f=
+6f-d9a5-4044-a4ae-8db846d0e219-000000%2F2Krv97TpWrOxyFDJ9F-iomAuLfc%3D441&a=
+mp;data=3D05%7C02%7C%7Cc087c58e4e3a4691d26f08dde9845beb%7C84df9e7fe9f640afb=
+435aaaaaaaaaaaa%7C1%7C0%7C638923476861653441%7CUnknown%7CTWFpbGZsb3d8eyJFbX=
+B0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUI=
+joyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DXOJQQt5QYc%2BGWlYTUetl7VgxjPS%2FMlUlGY=
+XMFcCIOOc%3D&amp;reserved=3D0" originalsrc=3D"https://1g71brhi.r.us-east-1.=
+awstrack.me/L0/https:%2F%2Fwww.facebook.com%2Ftinder/1/0100019906832bc4-a30=
+d3f6f-d9a5-4044-a4ae-8db846d0e219-000000/2Krv97TpWrOxyFDJ9F-iomAuLfc=3D441"=
+ target=3D"_blank" rel=3D"noopener noreferrer"><img src=3D"https://marketin=
+g-images.gotinder.com/fb770f99448e4547ab9b64a0db22aa98/0.png" alt=3D"" widt=
+h=3D"44" height=3D"44" border=3D"0"></a></td>  								</tr>  							</tbod=
+y>  						</table>  						<table border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">  							<tbody>  								<tr>  									<td class=3D"text-15 lh-25 =
+gray a-center" style=3D"padding: 16px 0 40px; font-size: 15px; font-family:=
+ Arial, sans-serif; min-width: auto !important; line-height: 25px; color: #=
+9b9b9b; text-align: center;">This email was sent by Tinder. Not a fan? <a h=
+ref=3D"https://na01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2F1=
+g71brhi.r.us-east-1.awstrack.me%2FL0%2Fhttps%3A%252F%252Ftinder.com%252Fapp=
+%252Femail-subscription%253Ftoken%3D87351285-817c-4de4-85f0-7be03049b424%2F=
+1%2F0100019906832bc4-a30d3f6f-d9a5-4044-a4ae-8db846d0e219-000000%2Fe8mV3nGC=
+u75MVZM6Q02ayXni4RE%3D441&amp;data=3D05%7C02%7C%7Cc087c58e4e3a4691d26f08dde=
+9845beb%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638923476861671689%7CU=
+nknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW=
+4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3D9ZI%2BaUbyl=
+M3upm1n1QJhKRcJrM3uuUmMcW5iG2kp%2Bl0%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://1g71brhi.r.us-east-1.awstrack.me/L0/https:%2F%2Ftinder.com%2Fapp%2Fem=
+ail-subscription%3Ftoken=3D87351285-817c-4de4-85f0-7be03049b424/1/010001990=
+6832bc4-a30d3f6f-d9a5-4044-a4ae-8db846d0e219-000000/e8mV3nGCu75MVZM6Q02ayXn=
+i4RE=3D441" target=3D"_blank" class=3D"link gray" style=3D"text-decoration:=
+ underline; color: #9b9b9b; font-weight: bold" rel=3D"noopener noreferrer">=
+<span class=3D"link gray" style=3D"text-decoration: none; color: #9b9b9b;">=
+<strong>Unsubscribe</strong></span></a><br> 8800 Sunset Blvd. West Hollywoo=
+d, CA 90069<br> =C2=A9 2025, Tinder LLC. | <a href=3D"https://na01.safelink=
+s.protection.outlook.com/?url=3Dhttps%3A%2F%2F1g71brhi.r.us-east-1.awstrack=
+.me%2FL0%2Fhttps%3A%252F%252Fwww.gotinder.com%252Fterms%2F1%2F0100019906832=
+bc4-a30d3f6f-d9a5-4044-a4ae-8db846d0e219-000000%2Feh6ufiekzthJF6x4Qc0WgfsSY=
+P8%3D441&amp;data=3D05%7C02%7C%7Cc087c58e4e3a4691d26f08dde9845beb%7C84df9e7=
+fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638923476861689742%7CUnknown%7CTWFpbGZs=
+b3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWF=
+pbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DCzRITnuc9GSaoopimyzEf%2FkAUD=
+1BGNdQKANktKi9sPQ%3D&amp;reserved=3D0" originalsrc=3D"https://1g71brhi.r.us=
+-east-1.awstrack.me/L0/https:%2F%2Fwww.gotinder.com%2Fterms/1/0100019906832=
+bc4-a30d3f6f-d9a5-4044-a4ae-8db846d0e219-000000/eh6ufiekzthJF6x4Qc0WgfsSYP8=
+=3D441" target=3D"_blank" class=3D"link gray" style=3D"text-decoration: und=
+erline; color: #9b9b9b; font-weight: bold" rel=3D"noopener noreferrer"><spa=
+n class=3D"link gray" style=3D"text-decoration: none; color: #9b9b9b;">Priv=
+acy Policy</span></a></td>  								</tr> 							</tbody>  						</table>  =
+					</td>  				</tr>  			</tbody>  		</table>  	</td>  </tr>
+                                    </table>
+									<!-- END Footer -->
+                                </table>
+                            </td>
+                        </tr>
+			         </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+<img alt=3D"" src=3D"https://1g71brhi.r.us-east-1.awstrack.me/I0/0100019906=
+832bc4-a30d3f6f-d9a5-4044-a4ae-8db846d0e219-000000/FMzsm2xpp7jATDWxJJIml5Vn=
+0IA=3D441" style=3D"display: none; width: 1px; height: 1px;">
+</body>
+</html>=
+
+------=_Part_332297_2146775134.1756750883781--
